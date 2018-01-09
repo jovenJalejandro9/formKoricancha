@@ -1,0 +1,36 @@
+<section class="get">
+  <h3>Lista de Usuarios</h3>
+  <a href="/">Vuelta al principio</a>
+    <form action="/updateUser/{{this._id}} " method="post">
+      <div class="marginBottom">
+        <b>Nombre</b>: {{ this.userName }}
+        <div class="input">
+          <input type="text" name="userNameBox">
+        </div>
+      </div>
+      <div class="marginBottom">
+        <div><b>Direccion</b>: {{ this.addr }}</div>
+        <div class="input">
+          <input type="text" name="addrBox">
+        </div>
+      </div>
+      <div class="marginBottom">
+        <div><b>Telefono</b>: {{ this.tel }}</div>
+        <div class="input">
+          <input type="text" name="telBox">
+        </div>
+      </div>
+      <div class="marginBottom">
+        <div><b>Nombre de la Madre</b>: {{ this.motherName }}</div>
+        <div class="input">
+          <input type="text" name="motherNameBox">
+        </div>
+      </div>
+      
+      <div><b>ID</b>: {{ this._id }}</div>
+  
+      <button type="submit">INSERT</button>
+      
+    </form>
+
+</section>

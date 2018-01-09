@@ -1,0 +1,16 @@
+<section class="get">
+  <h3>Lista de Usuarios</h3>
+  <a href="/formUser">Añadir usuario</a>
+  <div>
+    {{# each items }}
+      <article class="item">
+        <div><b>Nombre</b>: {{ this.userName }}</div>
+        <div><b>Direccion</b>: {{ this.addr }}</div>
+        <div><b>Telefono</b>: {{ this.tel }}</div>
+        <a href="/showUser/{{ this._id }}">MOSTRAR FICHA</a>
+      </article>
+    {{/each}}
+  <a href="/deleteCollection">Borrar Users</a>
+
+  </div>
+</section>

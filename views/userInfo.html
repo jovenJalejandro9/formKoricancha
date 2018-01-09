@@ -1,0 +1,14 @@
+<section class="get">
+  <h3>{{this.id}}</h3>
+  <a href="/">Vuelta al princio</a>
+  <div>
+    {{# each items }}
+      <article class="item">
+        <div>Nombre: {{ this.id }}</div>
+        <div>Direccion: {{ this.id }}</div>
+        <div>Telefono: {{ this.id }}</div>
+        <div>ID: {{ this._id }}</div>
+      </article>
+    {{/each}}
+  </div>
+</section>
