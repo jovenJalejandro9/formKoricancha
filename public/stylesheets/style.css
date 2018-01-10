@@ -11,7 +11,7 @@ section {
   float: left;
   padding: 10px;
   margin: 30px;
-  width: 300px;
+  width:100%;
   min-height: 400px;
 }
 
@@ -23,16 +23,14 @@ section:last-of-type {
   margin-right: 0;
 }
 
-section h3 {
+section h1 {
   border-bottom: 1px solid black;
   padding-bottom: 5px;
+  margin-top: 70px
 }
 
 .insert {
-  background: #2ecc71;
 }
-
-
 
 .update {
   background: #3498db;
@@ -43,9 +41,14 @@ section h3 {
 }
 
 .input label {
+  font-size: 17px;
   display: block;
   font-weight: bold;
   padding: 2px 0;
+  min-width: 160px;
+}
+.spanlabel{
+  font-weight: normal;
 }
 
 input,
@@ -61,13 +64,27 @@ button {
   cursor: pointer;
 }
 
-
 .item {
   margin: 10px 0;
   padding: 5px;
   background: #e0e0e0;
 }
 
-.marginBottom{
+.row{
   margin-bottom: 12px;
+}
+.marginBottom{
+  margin-bottom: 26px
+}
+
+.box_inline {
+  display: inline-block;
+  width: 24%;
+  margin-right: 20px,
+
+}
+
+.normalField{
+  width: 90%;
+
 }

@@ -38,7 +38,7 @@ router.get('/showId/:id',function(req,res,next){
 })
 
 router.get('/formUser',function(req, res, next){
-  res.render('formUser');
+  res.render('completeFormUser');
 })
 
 router.post('/insert', function(req, res, next) {

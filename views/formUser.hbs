@@ -1,23 +1,45 @@
 <h1>Formulario de apadrinamientos Koricancha</h1>
 <section class="insert">
-  <h3>Nuevo usuario</h3>
+  <h1>1.Datos personales</h1> 
   <form action="/insert" method="post">
-    <div class="input">
-      <label for="userName">Nombre del usuario</label>
-      <input type="text" id="userName" name="userName">
+    <div class="row">
+      <div class="input box_inline">
+        <label for="userName ">Nombre del usuario</label>
+        <input class="normalField" type="text" name="userName">
+      </div>
+      <div class="input box_inline">
+        <label>Direccion</label>
+        <input class="normalField" type="text" name="addr">
+      </div>
+      <div class="input box_inline">
+        <label>Telefono</label>
+        <input class="normalField" type="text" name="tel">
+      </div>
+      <div class="input box_inline">
+        <label>Nombre de la madre</label>
+        <input class="normalField" type="text" name="motherName">
+      </div>
     </div>
-    <div class="input">
-      <label for="addr">Direccion</label>
-      <input type="text" id="addr" name="addr">
-    </div>
-    <div class="input">
-      <label for="tel">Telefono</label>
-      <input type="text" id="tel" name="tel">
-    </div>
-    <div class="input">
-      <label for="motherName">Nombre de la madre</label>
-      <input type="text" id="motherName" name="motherName">
+    <div class="row">
+      <div class="input box_inline">
+        <label>Nombre de la madre</label>
+        <input class="normalField" type="text" name="motherName">
+      </div>
+      <div class="input box_inline">
+        <label>Prueba de texto</label>
+        <textarea class="normalField" name="message" rows="10" cols="30">The cat was playing in the garden.
+        </textarea>
+      </div>
+      <div class="input box_inline">
+        <label>Prueba de texto</label>
+        <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+      </div>
     </div>
     <button type="submit">INSERT</button>
   </form>
 </section>
+
+
+
+
